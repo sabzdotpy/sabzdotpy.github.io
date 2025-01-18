@@ -8,7 +8,10 @@ function App() {
 
   return (
     <>
-      Hello World
+      Hello World! <br />
+      Site is under construction. <br />
+      Please check back later. <br />
+      In the meantime, know more about me on <a href="https://www.github.com/sabzdotpy">GitHub</a> <br />
     </>
   )
 }

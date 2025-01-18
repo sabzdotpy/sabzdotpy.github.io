@@ -31,6 +31,9 @@ jobs:
     - run: npm run build --if-present
     - run: cp dist/index.html dist/404.html
 
+    - name: Create CNAME Record (sabz.me)
+      run: echo "sabz.me" > dist/CNAME
+
     - name: Deploy with gh-pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git

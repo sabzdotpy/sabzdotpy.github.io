@@ -1,0 +1,39 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.imageContainer {
+    position: relative;
+    padding: .1rem;
+    
+    $segments: 18;
+    $segment-angle: 360deg / $segments;
+    $gradient: '';
+    
+    @for $i from 0 through ($segments - 1) {
+        $start: $i * $segment-angle;
+        $mid: $start + $segment-angle/2;
+        $end: $start + $segment-angle;
+        
+        $gradient: $gradient + 
+            if($i > 0, ', ', '') +
+            'var(--color-primary) ' + $start +
+            ', var(--color-primary) ' + $mid +
+            ', transparent ' + $mid +
+            ', transparent ' + $end;
+    }
+    
+    background: conic-gradient(#{$gradient});
+    animation: spin 40s linear infinite;
+
+
+    img {
+        animation: spin 40s linear reverse infinite;
+    }
+}

@@ -4,7 +4,6 @@ import { IoLocationOutline, IoLogoLinkedin } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 
 
 import CLink from "../../components/CLink";
@@ -64,22 +63,22 @@ export default function LeftPane({ className }) {
                 <CiMail className="inline mb-1 mr-1" />
                 <CLink
                     to={"mailto:sabari.codes@gmail.com"}
-                    className={"text-white!"}
+                    className={"text-(--color-text)!"}
                 >
                     sabari.codes@gmail.com
                 </CLink>
             </div>
-            <div>
+            {/* <div>
                 <MdOutlineLocalPhone className="inline mb-1 mr-1" />
-                <CLink className={"text-white!"} to={"tel:+91 8754605197"}>+91 8754605197</CLink>
-            </div>
+                <CLink className={"text-(--color-text)!"} to={"tel:+91 8754605197"}>+91 8754605197</CLink>
+            </div> */}
           </div>
 
           <div className="socials flex gap-2 mt-6 justify-center items-center">
-              <Link className="text-white!" to={"https://linkedin.com/in/sabari01"} target="_blank">
+              <Link className="text-(--color-text)!" to={"https://linkedin.com/in/sabari01"} target="_blank">
                     <IoLogoLinkedin size={"20px"} />
               </Link>
-              <Link className="text-white!" to={"https://github.com/sabzdotpy"} target="_blank">
+              <Link className="text-(--color-text)!" to={"https://github.com/sabzdotpy"} target="_blank">
                     <FaGithub size={"20px"} />
               </Link>
           </div>

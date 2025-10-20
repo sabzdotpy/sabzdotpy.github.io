@@ -10,9 +10,9 @@
 
 .imageContainer {
     position: relative;
-    padding: .1rem;
+    padding: .2rem;
     
-    $segments: 18;
+    $segments: 24;
     $segment-angle: 360deg / $segments;
     $gradient: '';
     

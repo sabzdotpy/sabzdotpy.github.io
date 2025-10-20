@@ -150,7 +150,7 @@ textarea {
 
 * {
   transition-property: background, background-color, color, border-color;
-  transition-duration: .15s;
+  transition-duration: .25s;
   transition-timing-function: ease-in;
 }
 

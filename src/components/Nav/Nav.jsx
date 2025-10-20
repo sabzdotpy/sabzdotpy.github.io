@@ -1,5 +1,8 @@
 import { useTheme } from "../../context/ThemeContext";
 
+import light from "../../assets/light.png";
+import dark from "../../assets/dark.png";
+
 import CLink from "../CLink";
 
 export default function Nav() {
@@ -28,9 +31,9 @@ export default function Nav() {
                     </ul>
                 </div>
                 <div className="right flex flex-2 justify-end">
-                    <button onClick={toggleTheme}>
-                        Theme
-                    </button>
+                    <div className="themeToggle w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:scale-105 transition-transform" onClick={toggleTheme} >
+                        <img className="w-full h-full object-contain" src={theme === "light" ? dark : light} alt={(theme == "light") ? "take me back to the dark side" : "i love the light"} />
+                    </div>
                 </div>
             </nav>
         </>

@@ -1,4 +1,4 @@
-import logo from "../../assets/sabz-dark-420x420-60kb.png";
+import logo from "../../assets/headshot.png";
 import "./SelfTwoSectionLayout.scss";
 
 import { IoLocationOutline, IoLogoLinkedin } from "react-icons/io5";
@@ -43,11 +43,11 @@ export default function LeftPane({ className }) {
           {greetings[Math.floor(Math.random() * greetings.length)]}
         </h4>
 
-        <div className="imageContainer relative h-36 w-36 rounded-full flex justify-center items-center overflow-hidden">
+        <div className="imageContainer relative h-42 w-42 rounded-full flex justify-center items-center overflow-hidden">
           <img
             src={logo}
             alt="Headshot"
-            className="h-36 w-36 rounded-full object-cover relative z-10"
+            className="h-40 w-40 rounded-full object-cover relative z-10"
           />
         </div>
         <h2 className="m-0 mt-6 mb-0 text-(--color-primary) font-[Playfair_Display]">

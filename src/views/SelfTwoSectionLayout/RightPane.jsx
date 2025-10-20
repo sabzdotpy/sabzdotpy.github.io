@@ -54,7 +54,7 @@ function ExperienceCard({ title, company, time, description, companyIcon }) {
             {companyIcon || <FaRegBuilding size={"13px"} />}
             {company}
           </div>
-          <div className="text-(--color-text)/70 text-sm">{description}</div>
+          <div className="text-(--color-text)/70 text-sm text-justify md:text-left">{description}</div>
         </div>
       </div>
     </>
@@ -104,7 +104,7 @@ export default function RightPane({ className }) {
             <div className="header font-bold text-xl mb-4">Core Skills</div>
 
             <div className="content text-[1rem]! text-(--color-text)/80 space-y-2">
-              <div className="skills  grid grid-cols-2 gap-x-8 gap-y-4">
+              <div className="skills  grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                 <SkillGroup
                   icon={<IoMdCode />}
                   topic={"Languages"}

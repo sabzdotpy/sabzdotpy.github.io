@@ -17,7 +17,7 @@ export default function Nav() {
         <>
             <nav className="desktopNav fixed top-0 z-10 w-screen flex justify-between align-middle py-4 px-6 box-border backdrop-blur-md shadow-[0_4px_20px_.05px_var(--color-button-border)]">
                 <div className="left flex-4">
-                    <ul className="flex gap-12 h-full justify-start items-center">
+                    <ul className="flex gap-6 h-full justify-start items-center">
                         {
                             Object.entries(navLinks).map(([name, path]) => (
                                 <li key={name} className="navLink list-none text-md font-normal hover:font-medium underline-offset-8 decoration-2 decoration-[var(--color-accent)]">

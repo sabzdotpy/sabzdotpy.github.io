@@ -1,0 +1,26 @@
+/* LinkWithSquiggle.scss */
+.link-container {
+  display: inline-block;
+  position: relative;
+}
+
+.squiggle {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 8px;
+  overflow: visible;
+}
+
+.squiggle path {
+  --len: 200;
+  stroke: var(--color-primary-hover);
+  stroke-dasharray: var(--len);
+  stroke-dashoffset: var(--len);
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.link:hover + .squiggle path {
+  stroke-dashoffset: 0;
+}

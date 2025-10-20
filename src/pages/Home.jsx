@@ -1,13 +1,13 @@
 import Nav from '../components/Nav';
 
-import { useTheme } from '../context/ThemeContext';
+import TwoPaneContaier from '../views/SelfTwoSectionLayout/TwoPaneContainer';
 
 export default function Home() {
-    const { theme, toggleTheme } = useTheme();
 
     return (
         <>
-        <Nav />
+            <Nav />
+            <TwoPaneContaier />
         </>
     )
 }

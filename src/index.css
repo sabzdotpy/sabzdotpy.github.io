@@ -147,6 +147,12 @@ textarea {
   resize: vertical;
 }
 
+textarea::placeholder {
+  color: var(--color-text);
+  opacity: 0.6;
+  font-size: .8rem;
+}
+
 
 * {
   transition-property: background, background-color, color, border-color;

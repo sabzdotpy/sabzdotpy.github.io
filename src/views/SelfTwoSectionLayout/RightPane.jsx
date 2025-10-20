@@ -1,6 +1,11 @@
 import { IoMdCode } from "react-icons/io";
 import { MdOutlineDesktopWindows } from "react-icons/md";
-import { LuServer, LuDatabase, LuCloud, LuSendHorizontal  } from "react-icons/lu";
+import {
+  LuServer,
+  LuDatabase,
+  LuCloud,
+  LuSendHorizontal,
+} from "react-icons/lu";
 import { LiaToolsSolid } from "react-icons/lia";
 import { FaMobileScreen, FaRegBuilding } from "react-icons/fa6";
 
@@ -162,7 +167,7 @@ export default function RightPane({ className }) {
                 title={"SDE Intern"}
                 company={"Infoziant"}
                 description={
-                  "Led development of microservices architecture, 40% improvement in system performance."
+                  "Developed secure full-stack systems with React and Express.js, implementing RBAC, JWT authentication, and SQL protection. Optimized backend performance, resolving 100+ issues and reducing response latency by 40%."
                 }
                 time={"Mar 2025 - Present"}
               />
@@ -171,7 +176,7 @@ export default function RightPane({ className }) {
                 title={"Contract Based Freelance Developer"}
                 company={"Aurora iTech"}
                 description={
-                  "Led development of microservices architecture, 40% improvement in system performance."
+                  "Assisted in developing an e-commerce platform, integrating payment systems and dynamic pricing based on product attributes."
                 }
                 time={"Aug 2022 - Nov 2022"}
               />
@@ -195,15 +200,17 @@ export default function RightPane({ className }) {
           </section>
 
           <div className="divider my-8 h-0.25 w-full bg-(--color-primary) opacity-30"></div>
-		
-		<section>
-			<div className="header font-bold text-xl mb-4">Projects</div>
-			<div className="content text-[1rem]! text-(--color-text)/80">
-				This section will be furnished soon. Please visit my <CLink to="https://github.com/sabzdotpy" target="_blank">GitHub</CLink> profile to explore my projects.
-			</div>
 
-		</section>
-
+          <section>
+            <div className="header font-bold text-xl mb-4">Projects</div>
+            <div className="content text-[1rem]! text-(--color-text)/80">
+              This section will be furnished soon. Please visit my{" "}
+              <CLink to="https://github.com/sabzdotpy" target="_blank">
+                GitHub
+              </CLink>{" "}
+              profile to explore my projects.
+            </div>
+          </section>
 
           <div className="divider my-8 h-0.25 w-full bg-(--color-primary) opacity-30"></div>
 
@@ -213,16 +220,17 @@ export default function RightPane({ className }) {
               I'm always open to discussing new opportunities, collaborations,
               or just a friendly chat about technology.
             </div>
-            <div className="content text-[1rem]! text-(--color-text)/80 my-6">
-              <form 
-			  	action={(e) => {
-				e.preventDefault();
-				alert("Form action is currently disabled.");
-				}} 
-				onSubmit={(e) => {
-				e.preventDefault();
-				alert("Form submission is currently disabled.");
-			  }}>
+            <div className="contactForm content text-[1rem]! text-(--color-text)/80 my-6">
+              <form
+                action={(e) => {
+                  e.preventDefault();
+                  alert("Form action is currently disabled.");
+                }}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  alert("Form submission is currently disabled.");
+                }}
+              >
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-4">
                     <div className="flex-col flex-1">
@@ -232,7 +240,7 @@ export default function RightPane({ className }) {
                         id="name"
                         name="name"
                         placeholder="Your Name"
-						required
+                        required
                         className="mt-1 w-full border border-(--color-button-border) bg-(--color-background) text-(--color-text) px-4 py-2 focus:outline-none focus:border-(--color-primary) transition-colors"
                       />
                     </div>
@@ -244,7 +252,7 @@ export default function RightPane({ className }) {
                         id="email"
                         name="email"
                         placeholder="Your Email"
-						required
+                        required
                         className="mt-1 w-full border border-(--color-button-border) bg-(--color-background) text-(--color-text) px-4 py-2 focus:outline-none focus:border-(--color-primary) transition-colors"
                       />
                     </div>
@@ -256,7 +264,7 @@ export default function RightPane({ className }) {
                     name="message"
                     rows="4"
                     placeholder="Your Message"
-					required
+                    required
                     className="w-full border border-(--color-button-border) bg-(--color-background) text-(--color-text) px-4 py-2 focus:outline-none focus:border-(--color-primary) transition-colors"
                   ></textarea>
 
@@ -264,7 +272,8 @@ export default function RightPane({ className }) {
                     type="submit"
                     className="float-right ml-auto self-start bg-(--color-primary) text-(--color-background) px-6 py-2 mt-6 rounded-full hover:bg-(--color-primary-dark) transition-colors"
                   >
-                    Send Message <LuSendHorizontal className="inline mb-1 ml-1" />
+                    Send Message{" "}
+                    <LuSendHorizontal className="inline mb-1 ml-1" />
                   </button>
                 </div>
               </form>

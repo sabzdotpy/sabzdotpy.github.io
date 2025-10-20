@@ -76,10 +76,10 @@ export default function LeftPane({ className }) {
           </div>
 
           <div className="socials flex gap-2 mt-6 justify-center items-center">
-              <Link className="text-white!" to={"https://linkedin.com/in/sabari01"}>
+              <Link className="text-white!" to={"https://linkedin.com/in/sabari01"} target="_blank">
                     <IoLogoLinkedin size={"20px"} />
               </Link>
-              <Link className="text-white!" to={"https://github.com/sabzdotpy"}>
+              <Link className="text-white!" to={"https://github.com/sabzdotpy"} target="_blank">
                     <FaGithub size={"20px"} />
               </Link>
           </div>

@@ -52,7 +52,8 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
             leftPaneContent 
             ${e} 
             h-full 
-            bg-white/2
+            bg-transparent
+            md:bg-white/2
             flex 
             flex-col
             justify-center

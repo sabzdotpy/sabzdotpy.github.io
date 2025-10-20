@@ -25,7 +25,8 @@ export default function LeftPane({ className }) {
             leftPaneContent 
             ${className} 
             h-full 
-            bg-white/2
+            bg-transparent
+            md: bg-white/2
             flex 
             flex-col
             justify-center

@@ -1,5 +1,3 @@
-// CLink.jsx
-import React from "react";
 import "./CLink.scss";
 
 import { Link } from "react-router-dom";

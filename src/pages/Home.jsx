@@ -1,16 +1,18 @@
 
 
+import { useTheme } from '../context/ThemeContext';
+
 export default function Home() {
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <>
-            Hello World! <br />
-            Site is under construction. <br />
-            Please check back later. <br />
-            In the meantime, know more about me on <a href="https://www.github.com/sabzdotpy">GitHub</a> <br />
-            :) <br />
-
-            View my portfolio <a href="/portfolio.pdf">here</a>.
+        <div className='text-3xl font-bold underline'>
+        Hey bud
+        </div>
+            <button onClick={toggleTheme}>
+                Switch to {theme === 'light' ? 'dark' : 'light'} mode
+            </button>
         </>
     )
 }

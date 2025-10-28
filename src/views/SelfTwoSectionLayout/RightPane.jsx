@@ -86,7 +86,7 @@ export default function RightPane({ className }) {
   return (
     <>
       <div
-        className={`rightPaneContentContainer ${className} pt-30 flex-col overflow-y-auto`}
+        className={`rightPaneContentContainer ${className} pt-26 flex-col overflow-y-auto`}
       >
         <div className="rightPaneContent w-10/12 mx-auto max-h-max">
           <section>

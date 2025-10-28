@@ -45,8 +45,6 @@ body {
   place-items: center;
   color: var(--color-text);
   background-color: var(--color-background);
-  /* prevent page-level scrolling; allow internal containers to scroll */
-  /* overflow: hidden; */
 }
 
 a {

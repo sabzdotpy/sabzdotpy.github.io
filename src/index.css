@@ -34,12 +34,19 @@
   --color-button-hover: #953720;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   color: var(--color-text);
   background-color: var(--color-background);
+  /* prevent page-level scrolling; allow internal containers to scroll */
+  /* overflow: hidden; */
 }
 
 a {

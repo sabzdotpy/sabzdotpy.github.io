@@ -7,9 +7,9 @@ export default function TwoPaneContaier() {
     return (
         <>
 
-            <div className="twoPane z-0 flex flex-col mt-20 md:mt-0 md:flex-row top-0 w-screen">
-                <LeftPane className="leftPane w-full md:w-1/4 h-auto md:h-screen" />
-                <RightPane className="rightPane w-full md:w-3/4 h-auto md:h-screen overflow-y-auto" />
+            <div className="twoPane z-0 flex flex-col md:flex-row h-[calc(100vh-3rem)] w-full">
+                <LeftPane className="leftPane w-full md:w-1/4 h-auto md:h-full" />
+                <RightPane className="rightPane w-full md:w-3/4 h-auto md:h-full overflow-y-auto" />
             </div>
         
         </>

@@ -5,9 +5,9 @@ import TwoPaneContaier from '../views/SelfTwoSectionLayout/TwoPaneContainer';
 export default function Home() {
 
     return (
-        <>
+        <div>
             <Nav />
             <TwoPaneContaier />
-        </>
+        </div>
     )
 }

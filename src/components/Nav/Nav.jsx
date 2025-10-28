@@ -18,8 +18,9 @@ export default function Nav() {
 
     return (
         <>
-            <nav className="desktopNav fixed top-0 z-10 w-screen flex justify-between align-middle py-4 px-6 box-border backdrop-blur-md shadow-[0_4px_20px_.05px_var(--color-button-border)]">
-                <div className="left flex-4">
+            <nav className="desktopNav fixed top-0 z-10 w-full flex justify-between align-middle py-4 box-border backdrop-blur-md shadow-[0_4px_20px_.05px_var(--color-button-border)]">
+                <div className="container mx-auto px-6 w-full flex justify-between">
+                  <div className="left flex-4">
                     <ul className="flex gap-6 h-full justify-start items-center">
                         {
                             Object.entries(navLinks).map(([name, path]) => (
@@ -34,6 +35,7 @@ export default function Nav() {
                     <div className="themeToggle w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:scale-105 transition-transform" onClick={toggleTheme} >
                         <img className="w-full h-full object-contain" src={theme === "light" ? dark : light} alt={(theme == "light") ? "take me back to the dark side" : "i love the light"} />
                     </div>
+                </div>
                 </div>
             </nav>
         </>

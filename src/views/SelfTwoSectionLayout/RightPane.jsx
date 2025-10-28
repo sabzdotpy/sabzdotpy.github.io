@@ -39,11 +39,12 @@ function SkillGroup({ icon, topic, skills }) {
   );
 }
 
-function ExperienceCard({ title, company, time, description, companyIcon }) {
+function ExperienceCard({ title, company, time, description, companyIcon, latest }) {
   return (
     <>
-      <div className="experienceCard w-full border-l-2 border-(--color-primary)/30 p-3 pt-1.5 mb-6 relative">
-        <div className="ball size-3 bg-(--color-primary) absolute top-3.5 -left-1.75 rounded-xs rotate-45 "></div>
+      <div className="experienceCard w-full border-l-2 border-(--color-primary)/30 p-3 pt-1.5 relative">
+
+        <div className={`ball size-3 ${latest ? "bg-(--color-primary)" : "bg-(--color-primary)/80"} ${latest ? "" : "-scale-75"} absolute top-3.5 -left-1.75 rounded-xs rotate-45 `}></div>
 
         <div className="content">
           <div className="flex justify-between items-center">
@@ -54,7 +55,7 @@ function ExperienceCard({ title, company, time, description, companyIcon }) {
             {companyIcon || <FaRegBuilding size={"13px"} />}
             {company}
           </div>
-          <div className="text-(--color-text)/70 text-sm text-justify md:text-left">{description}</div>
+          <div className="text-(--color-text)/70 text-sm text-justify md:text-left whitespace-pre-line">{description}</div>
         </div>
       </div>
     </>
@@ -74,7 +75,7 @@ function EducationCard({ degree, institution, time, description }) {
           <div className="institution font-medium text-(--color-text)/80 mb-2">
             {institution}
           </div>
-          <div className="text-(--color-text)/70 text-sm">{description}</div>
+          <div className="text-(--color-text)/70 text-sm whitespace-pre-line">{description}</div>
         </div>
       </div>
     </>
@@ -170,6 +171,7 @@ export default function RightPane({ className }) {
                   "Developed secure full-stack systems with React and Express.js, implementing RBAC, JWT authentication, and SQL protection. Optimized backend performance, resolving 100+ issues and reducing response latency by 40%."
                 }
                 time={"Mar 2025 - Present"}
+                latest
               />
 
               <ExperienceCard
@@ -193,7 +195,9 @@ export default function RightPane({ className }) {
                 institution={"Kalasalingam University"}
                 time={"Aug 2022 - Aug 2026"}
                 description={
-                  "Relevant Coursework: Computer Networks, OOPs with Java, Software Contruction and Management"
+                  `Relevant Coursework: Computer Networks, OOPs with Java, Software Contruction and Management
+                  CGPA: 9.1/10
+                  `
                 }
               />
             </div>

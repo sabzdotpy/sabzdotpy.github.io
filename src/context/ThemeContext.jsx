@@ -21,9 +21,25 @@ export const ThemeProvider = ({ children }) => {
         // Save to localStorage
         localStorage.setItem('theme', theme);
     }, [theme]);
+    
+    
+    function setFavicon(href) {
+    let link = document.querySelector('link[rel*="icon"]');
+    if (!link) {
+        link = document.createElement("link");
+        link.rel = "icon";
+        document.head.appendChild(link);
+    }
+    if (link.href.endsWith(href) === false) {
+        link.href = href;
+    }
+    console.log("Favicon set to:", href);
+    }
+
 
     const toggleTheme = () => {
         setTheme(prev => prev === 'light' ? 'dark' : 'light');
+        setFavicon((theme === "light") ? "/favicon.ico" : "/favicon-light.ico");
     };
 
     return (

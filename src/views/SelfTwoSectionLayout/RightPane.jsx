@@ -226,10 +226,10 @@ export default function RightPane({ className }) {
             </div>
             <div className="contactForm content text-[1rem]! text-(--color-text)/80 my-6">
               <form
-                action={(e) => {
-                  e.preventDefault();
-                  alert("Form action is currently disabled.");
-                }}
+                // action={(e) => {
+                //   e.preventDefault();
+                //   alert("Form action is currently disabled.");
+                // }}
                 onSubmit={(e) => {
                   e.preventDefault();
                   alert("Form submission is currently disabled.");

@@ -2,10 +2,10 @@ import "./CLink.scss";
 
 import { Link } from "react-router-dom";
 
-const CLink = ({ to, className, children }) => {
+const CLink = ({ to, className, children, target }) => {
   return (
     <div className="link-container">
-      <Link to={to} className={`link ${className || ""}`}>
+      <Link to={to} className={`link ${className || ""}`} target={target}>
         {children}
       </Link>
       <svg

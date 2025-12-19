@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 import CLink from "../../components/CLink";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 
 export default function LeftPane({ className }) {
@@ -17,6 +18,14 @@ export default function LeftPane({ className }) {
     "Hi there! 👋",
     "Wazzuup! 😎",
   ];
+
+  const [greeting, setGreeting] = useState();
+
+  useEffect(() => {
+    setGreeting(
+      greetings[Math.floor(Math.random() * greetings.length)]
+    );
+  }, []);
 
   return (
     <>
@@ -41,7 +50,7 @@ export default function LeftPane({ className }) {
         `}
       >
         <h4 className="mb-6">
-          {greetings[Math.floor(Math.random() * greetings.length)]}
+          {greeting || "Hello! 👋"}
         </h4>
 
         <div className="imageContainer relative h-42 w-42 rounded-full flex justify-center items-center overflow-hidden">

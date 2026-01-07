@@ -64,7 +64,7 @@ export default function LeftPane({ className }) {
           Sabari S
         </h2>
         <h5 className="m-0 font-semibold! w-3/4 text-[1rem]! text-(--color-text)/80">
-          Backend Developer / Student
+          SDE / Student
         </h5>
 
         <div className="divider my-4 h-0.5 w-20 bg-(--color-primary) opacity-20"></div>

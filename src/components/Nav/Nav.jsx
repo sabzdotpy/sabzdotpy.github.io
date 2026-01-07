@@ -11,7 +11,7 @@ export default function Nav() {
 
     const navLinks = {
         home: "/",
-        freelance: "/freelance",
+        // freelance: "/freelance",
         contact: "/contact"
     }
     

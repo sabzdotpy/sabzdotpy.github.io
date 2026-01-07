@@ -13,7 +13,7 @@ function AnimatedRoutes() {
     <PageTransition locationKey={location.pathname}>
       <Routes location={location}>
         <Route path="/" element={<Home />} />
-        <Route path="/freelance" element={<Freelance />} />
+        {/* <Route path="/freelance" element={<Freelance />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </PageTransition>

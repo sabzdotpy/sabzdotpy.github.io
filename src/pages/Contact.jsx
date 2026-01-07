@@ -30,7 +30,7 @@ export default function Contact() {
           </div>
           <div className="w-1/2 mx-auto font-serif font-light text-xl italic text-(--color-text)/70 flex gap-5 justify-center items-center">
             <CLink to={"/"}>Home</CLink>
-            <CLink to={"/freelance"}>Freelance</CLink>
+            {/* <CLink to={"/freelance"}>Freelance</CLink> */}
           </div>
         </div>
       </div>
